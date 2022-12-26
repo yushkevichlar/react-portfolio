@@ -2,9 +2,7 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 
-type Props = {};
-
-export default function Header({}: Props) {
+export default function Header() {
 	return (
 		<header className="sticky top-0 p-5 flex flex-items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
 			<motion.div
@@ -25,16 +23,22 @@ export default function Header({}: Props) {
 			>
 				{/*Social icons */}
 				<SocialIcon
+					target="_blank"
+					rel="noopener noreferrer"
 					url="https://linkedin.com/in/yushkevichlar"
 					fgColor="#3a4cb3"
 					bgColor="transparent"
 				/>
 				<SocialIcon
+					target="_blank"
+					rel="noopener noreferrer"
 					url="https://github.com/yushkevichlar"
 					fgColor="#3a4cb3"
 					bgColor="transparent"
 				/>
 				<SocialIcon
+					target="_blank"
+					rel="noopener noreferrer"
 					url="https://t.me/yushkevichlar"
 					fgColor="#3a4cb3"
 					bgColor="transparent"
@@ -58,6 +62,8 @@ export default function Header({}: Props) {
 				className="flex flex-row items-center text-[#3a4cb3] font-thin cursor-pointer"
 			>
 				<SocialIcon
+					target="_blank"
+					rel="noopener noreferrer"
 					className="cursor-pointer"
 					network="email"
 					fgColor="#3a4cb3"
