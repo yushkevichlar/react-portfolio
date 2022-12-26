@@ -2,6 +2,7 @@ import About from "./components/About";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import WorkExperience from "./components/WorkExperience";
+import Skills from "./components/Skills";
 
 function App() {
 	return (
@@ -21,6 +22,10 @@ function App() {
 
 			<section id="experience" className="snap-center">
 				<WorkExperience />
+			</section>
+
+			<section id="skills" className="snap-center">
+				<Skills />
 			</section>
 		</div>
 	);
