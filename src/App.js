@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import WorkExperience from "./components/WorkExperience";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
 	return (
@@ -31,6 +32,10 @@ function App() {
 
 			<section id="projects" className="snap-center">
 				<Projects />
+			</section>
+
+			<section id="contact" className="snap-center">
+				<Contact />
 			</section>
 
 			<a href="#hero">
