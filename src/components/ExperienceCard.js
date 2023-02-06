@@ -1,41 +1,93 @@
 import React from "react";
+import { DiCss3 } from "react-icons/di";
+import {
+  FaHtml5,
+  FaSass,
+  FaGitAlt,
+  FaVuejs,
+  FaReact,
+  FaFigma,
+} from "react-icons/fa";
+import {
+  SiJavascript,
+  SiSap,
+  SiRedux,
+  SiVuedotjs,
+  SiVuetify,
+} from "react-icons/si";
 
-export default function ExperienceCard() {
-	return (
-		<article
-			className="flex flex-col items-center space-y-7 flex-shrink-0
-     w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-blue-900 p-10 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden"
-		>
-			<div className="px-0 md:px-10">
-				<h4 className="text-4xl font-light">Frontend Developer</h4>
-				<p className="text-2xl font-bold mt-1">Company</p>
-				<div className="flex space-x-2 my-2">
-					<img
-						className="h-10 w-10 rounded-full"
-						src="https://www.clipartmax.com/png/middle/470-4707396_javascript-icon-html-css-js-icons.png"
-						alt="tech"
-					></img>
-					<img
-						className="h-10 w-10 rounded-full"
-						src="https://www.clipartmax.com/png/middle/470-4707396_javascript-icon-html-css-js-icons.png"
-						alt="tech"
-					></img>
-					<img
-						className="h-10 w-10 rounded-full"
-						src="https://www.clipartmax.com/png/middle/470-4707396_javascript-icon-html-css-js-icons.png"
-						alt="tech"
-					></img>
-				</div>
-				<p className="uppercase py-5">Oct 2021 - Present</p>
+export default function ExperienceCard(props) {
+  return (
+    <article
+      className="flex flex-col items-center space-y-7 flex-shrink-0
+     w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#07112f] rounded-md
+     p-10 opacity-70 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden">
+      <div className="px-0 md:px-10">
+        <h4 className="text-4xl font-light">{props.title}</h4>
+        <p className="text-2xl font-bold mt-1">{props.company}</p>
+        <p className="uppercase py-5">{props.duration}</p>
 
-				<ul className="list-disc space-y-4 ml-5 text-lg">
-					<li>Summary points</li>
-					<li>Summary points</li>
-					<li>Summary points</li>
-					<li>Summary points</li>
-					<li>Summary points</li>
-				</ul>
-			</div>
-		</article>
-	);
+        <div className="flex space-x-2 my-2">
+          {props.technologies.map((el) => {
+            switch (el) {
+              case "html":
+                return (
+                  <div
+                    className="h-10 w-10 rounded-full"
+                    style={{ color: "#d84924" }}
+                    title="HTML5"
+                    key={el}>
+                    <FaHtml5 size={30} />
+                  </div>
+                );
+              case "css":
+                return (
+                  <div style={{ color: "#1e5da7" }} title="CSS3" key={el}>
+                    <DiCss3 size={30} />
+                  </div>
+                );
+              case "js":
+                return (
+                  <div style={{ color: "#ead41c" }} title="JavaScript" key={el}>
+                    <SiJavascript size={30} />
+                  </div>
+                );
+              case "sapui5":
+                return (
+                  <div style={{ color: "#1870c8" }} title="SAPUI5" key={el}>
+                    <SiSap size={30} />
+                  </div>
+                );
+              case "vue":
+                return (
+                  <div style={{ color: "#3eaf7c" }} title="Vue" key={el}>
+                    <SiVuedotjs size={30} />
+                  </div>
+                );
+              case "vuetify":
+                return (
+                  <div style={{ color: "#158fe9" }} title="Vuetify" key={el}>
+                    <SiVuetify size={30} />
+                  </div>
+                );
+              case "git":
+                return (
+                  <div style={{ color: "#e44c30" }} title="Git" key={el}>
+                    <FaGitAlt size={30} />
+                  </div>
+                );
+              default:
+                console.log("no prop");
+            }
+          })}
+        </div>
+
+        <ul className="list-disc space-y-2 ml-5 text-lg">
+          {props.summary.map((el) => {
+            return <li key={el}>{el}</li>;
+          })}
+        </ul>
+      </div>
+    </article>
+  );
 }
