@@ -18,7 +18,7 @@ function WorkExperience() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="w-full flex space-x-5 overflow-x-scroll pt-10 pb-5 px-10  snap-x snap-mandatory  scrollbar-thin scrollbar-track-black scrollbar-thumb-blue-800">
+        className="w-full flex space-x-5 overflow-x-scroll mt-[100px] xl:h-4/6 pt-10 md:pt-10 xl:pt-0 pb-5 px-10 snap-x snap-mandatory scrollbar-thin scrollbar-track-black scrollbar-thumb-blue-800">
         <ExperienceCard
           title="Trainee Front-end Developer (SAPUI5)"
           company="LeverX Group"
@@ -38,8 +38,8 @@ function WorkExperience() {
             "Developed SPAs with SAPUI5 framework based on MVC architecture (SAP HCM module)",
             "Developed components for creating complex business management system (CRM, HRM - internal corporate system) using Vue.js, Vuex, Vue Router and various libraries: Vuetify, Axios, Vue-ApexCharts",
             "Implemented API integration using Axios",
-            "Discussed choices and common sense of using technologies for new project features and their realization",
-            "Refactored 200+ components, making them readable and self-descriptive with Style Guides and best practices",
+            "Discussed and proposed technology options to use for effective implementation of new project features",
+            "Refactored 200+ components, making them readable and self-descriptive with Style Guides and best practices, which remarkably increased code consistency -> improved developer experience and delivery speed",
           ]}
           technologies={[
             "html",

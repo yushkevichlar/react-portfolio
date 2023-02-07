@@ -19,6 +19,25 @@ import {
   SiVuetify,
 } from "react-icons/si";
 
+const skillsProps = [
+  { name: "HTML5", iconTag: <FaHtml5 size={60} />, color: "#d84924" },
+  { name: "CSS3", iconTag: <DiCss3 size={60} />, color: "#1e5da7" },
+  { name: "SASS/SCSS", iconTag: <FaSass size={60} />, color: "#c36291" },
+  { name: "JavaScript", iconTag: <SiJavascript size={60} />, color: "#ead41c" },
+  { name: "SAPUI5", iconTag: <SiSap size={60} />, color: "#1870c8" },
+  { name: "React", iconTag: <FaReact size={60} />, color: "#5ccfee" },
+  {
+    name: "Tailwind CSS",
+    iconTag: <SiTailwindcss size={60} />,
+    color: "#07b0ce",
+  },
+  { name: "Vue", iconTag: <SiVuedotjs size={60} />, color: "#3eaf7c" },
+  { name: "Vuetify", iconTag: <SiVuetify size={60} />, color: "#158fe9" },
+  { name: "Git", iconTag: <FaGitAlt size={60} />, color: "#e44c30" },
+  { name: "npm", iconTag: <FaNpm size={60} />, color: "#c13534" },
+  { name: "Figma", iconTag: <FaFigma size={60} />, color: "" },
+];
+
 function Skills() {
   return (
     <motion.div
@@ -31,46 +50,18 @@ function Skills() {
         Skills
       </h3>
 
-      <div className="grid gap-20 grid-cols-4">
-        <div style={{ color: "#d84924" }} title="HTML5">
-          <FaHtml5 size={60} />
-        </div>
-        <div style={{ color: "#1e5da7" }} title="CSS3">
-          <DiCss3 size={60} />
-        </div>
-        <div style={{ color: "#c36291" }} title="SASS/SCSS">
-          <FaSass size={60} />
-        </div>
-        <div style={{ color: "#ead41c" }} title="JavaScript">
-          <SiJavascript size={60} />
-        </div>
-        <div style={{ color: "#1870c8" }} title="SAPUI5">
-          <SiSap size={60} />
-        </div>
-        <div style={{ color: "#5ccfee" }} title="React">
-          <FaReact size={60} />
-        </div>
-        {/* <div style={{ color: "#5ccfee" }} title="Redux">
-          <SiRedux size={60} />
-        </div> */}
-        <div style={{ color: "#07b0ce" }} title="Tailwind CSS">
-          <SiTailwindcss size={60} />
-        </div>
-        <div style={{ color: "#3eaf7c" }} title="Vue">
-          <SiVuedotjs size={60} />
-        </div>
-        <div style={{ color: "#158fe9" }} title="Vuetify">
-          <SiVuetify size={60} />
-        </div>
-        <div style={{ color: "#e44c30" }} title="Git">
-          <FaGitAlt size={60} />
-        </div>
-        <div style={{ color: "#c13534" }} title="npm">
-          <FaNpm size={60} />
-        </div>
-        <div title="Figma">
-          <FaFigma size={60} />
-        </div>
+      <div className="grid gap-10 grid-cols-3 md:grid-cols-4 xl:grid-cols-4 md:gap-15">
+        {skillsProps.map((el) => {
+          return (
+            <div
+              className="flex flex-col items-center justify-center"
+              style={{ color: el.color }}
+              key={el.name}>
+              {el.iconTag}
+              <div className="text-blue-100 mt-2">{el.name}</div>
+            </div>
+          );
+        })}
       </div>
     </motion.div>
   );

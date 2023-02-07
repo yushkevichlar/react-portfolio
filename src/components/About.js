@@ -27,7 +27,7 @@ export default function About() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
         src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 object-cover xl:w-[700px]"
+        className="-mb-20 md:mb-0 flex-shrink-0 w-56 object-cover xl:w-[600px]"
       />
 
       {/* <div className="space-y-10 px-0 md:px-10">
@@ -38,8 +38,8 @@ export default function About() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-col items-center justify-center">
-        <p className="text-xl max-w-[800px]">
+        className="flex flex-col items-center justify-center mt-[100px] md:mt-0 xl:mt-0">
+        <p className="text-left text-lg md:text-xl xl:text-xl max-w-[800px]">
           &nbsp;&nbsp;&nbsp;I’ve been interested in web design and programming
           for over 3 years now. Since then, I've become a skilled Front-end
           Developer who worked in various industries and with various

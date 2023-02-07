@@ -40,9 +40,9 @@ function Hero() {
           <a href="#contact">
             <button className="heroButton">Contact</button>
           </a>
-          {/* <a href="#projects">
+          <a href="#projects">
             <button className="heroButton">Projects</button>
-          </a> */}
+          </a>
         </div>
       </div>
     </div>

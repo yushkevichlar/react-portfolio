@@ -20,12 +20,12 @@ export default function ExperienceCard(props) {
   return (
     <article
       className="flex flex-col items-center space-y-7 flex-shrink-0
-     w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#07112f] rounded-md
-     p-10 opacity-70 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden">
+      h-7/12 w-[300px] md:w-[500px] xl:w-[800px] snap-center bg-[#07112f] rounded-md
+      p-10 opacity-70 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-auto scrollbar-thin scrollbar-track-black scrollbar-thumb-blue-800">
       <div className="px-0 md:px-10">
-        <h4 className="text-4xl font-light">{props.title}</h4>
-        <p className="text-2xl font-bold mt-1">{props.company}</p>
-        <p className="uppercase py-5">{props.duration}</p>
+        <h4 className="text-2xl xl:text-4xl font-light">{props.title}</h4>
+        <p className="text-xl xl:text-2xl font-bold mt-1">{props.company}</p>
+        <p className="uppercase pt-1 pb-2 xl:pb-5 xl:pt-2">{props.duration}</p>
 
         <div className="flex space-x-2 my-2">
           {props.technologies.map((el) => {
@@ -82,7 +82,7 @@ export default function ExperienceCard(props) {
           })}
         </div>
 
-        <ul className="list-disc space-y-2 ml-5 text-lg">
+        <ul className="list-disc space-y-2 ml-5 text-md xl:text-lg">
           {props.summary.map((el) => {
             return <li key={el}>{el}</li>;
           })}

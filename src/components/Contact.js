@@ -22,8 +22,8 @@ function Contact() {
         Contact
       </h3>
 
-      <div className="flex flex-col space-y-10 mt-20">
-        <div className="space-y-10 mr-5">
+      <div className="flex flex-col space-y-3 md:space-y-10 xl:space-y-10 mt-4 md:mt-20 xl:mt-20">
+        <div className="space-y-2 md:space-y-5 xl:space-y-5 mr-5">
           <div className="flex items-center justify-center space-x-2">
             <SocialIcon
               className="h-7 w-7 animate-pulse text-[#465cd9]"
@@ -33,7 +33,7 @@ function Contact() {
               fgColor="#3a4cb3"
               bgColor="transparent"
             />
-            <p className="text-2xl">Telegram</p>
+            <p className="md:text-2xl xl:text-2xl">Telegram</p>
           </div>
 
           <div className="flex items-center justify-center space-x-2">
@@ -45,7 +45,7 @@ function Contact() {
               fgColor="#3a4cb3"
               bgColor="transparent"
             />
-            <p className="text-2xl">LinkedIn</p>
+            <p className="text-sm md:text-2xl xl:text-2xl">LinkedIn</p>
           </div>
 
           <div className="flex items-center justify-center space-x-2">
@@ -57,24 +57,24 @@ function Contact() {
               fgColor="#3a4cb3"
               bgColor="transparent"
             />
-            <p className="text-2xl">yushkevichlar@gmail.com</p>
+            <p className="md:text-2xl xl:text-2xl">yushkevichlar@gmail.com</p>
           </div>
         </div>
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 w-fit mx-auto">
-          <div className="flex space-x-2">
+          className="text-sm md:text-base xl:text-base flex flex-col space-y-2 md:w-fit lg:w-fit w-11/12 mx-auto">
+          <div className="md:flex xl:flex md:space-x-2 xl:space-x-2 space-y-2 md:space-y-0 lg:space-y-0">
             <input
               {...register("name")}
               placeholder="Name"
-              className="contactInput"
+              className="contactInput w-full"
               type="text"
             />
             <input
               {...register("email")}
               placeholder="Email"
-              className="contactInput"
+              className="contactInput w-full"
               type="email"
             />
           </div>

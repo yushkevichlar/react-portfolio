@@ -29,16 +29,16 @@ function App() {
         <Skills />
       </section>
 
-      {/* <section id="projects" className="snap-center">
+      <section id="projects" className="snap-center">
         <Projects />
-      </section> */}
+      </section>
 
       <section id="contact" className="snap-center">
         <Contact />
       </section>
 
       <a href="#hero">
-        <footer className="sticky bottom-5 w-full cursor-pointer">
+        <footer className="sticky pb-10 md:pb-0 xl:pb-0 bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
             <button
               type="button"
