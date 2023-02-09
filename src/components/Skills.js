@@ -50,7 +50,7 @@ function Skills() {
         Skills
       </h3>
 
-      <div className="grid gap-10 grid-cols-3 md:grid-cols-4 xl:grid-cols-4 md:gap-15">
+      <div className="grid gap-5 grid-cols-3 md:grid-cols-4 xl:grid-cols-4 md:gap-16 xl:gap-16">
         {skillsProps.map((el) => {
           return (
             <div
@@ -58,7 +58,9 @@ function Skills() {
               style={{ color: el.color }}
               key={el.name}>
               {el.iconTag}
-              <div className="text-blue-100 mt-2">{el.name}</div>
+              <div className="text-blue-100 mt-2 text-sm md:text-base xl:text-base">
+                {el.name}
+              </div>
             </div>
           );
         })}
