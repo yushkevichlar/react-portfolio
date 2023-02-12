@@ -17,7 +17,7 @@ function Projects() {
         <span className="text-3xl animate-pulse">Coming soon...</span>
         <br />
         <br />
-        <span className="text-gray-400">
+        <span className="text-gray-400 text-base md:text-lg xl:text-xl">
           You can look at the{" "}
           <a
             href="https://yushkevichlar.github.io/Portfolio/#projects"

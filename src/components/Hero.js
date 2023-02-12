@@ -37,11 +37,11 @@ function Hero() {
           <a href="#skills">
             <button className="heroButton">Skills</button>
           </a>
-          <a href="#contact">
-            <button className="heroButton">Contact</button>
-          </a>
           <a href="#projects">
             <button className="heroButton">Projects</button>
+          </a>
+          <a href="#contact">
+            <button className="heroButton">Contact</button>
           </a>
         </div>
       </div>
