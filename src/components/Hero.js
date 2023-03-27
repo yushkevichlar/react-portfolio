@@ -1,6 +1,7 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
+import heroImg from "../assets/hero-img.webp";
 
 function Hero() {
   const [text] = useTypewriter({
@@ -16,7 +17,7 @@ function Hero() {
       <BackgroundCircles />
       <img
         className="relative rounded-full h-32 w-32 mx-auto object-cover brightness-75"
-        src="https://media.istockphoto.com/id/1363841854/vector/woman-with-laptop-working-in-internet.jpg?b=1&s=612x612&w=0&k=20&c=D1wrh4MPVY4xHXBUQxDhdzFUMRfp_tnA-rZwcfVgSVk="
+        src={heroImg}
         alt="main-photo"></img>
       <div className="z-20">
         <h2 className="text-sm uppercase text-[#465cd9] pb-2 tracking-[15px]">
