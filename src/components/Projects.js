@@ -53,6 +53,16 @@ function Projects() {
     },
   ];
 
+  let imgAnimation = {
+    transition: { duration: 1.2 },
+    whileInView: { opacity: 1, y: 0 },
+    viewport: { once: true },
+  };
+
+  const isMobile = window.innerWidth < 768;
+
+  imgAnimation.initial = isMobile ? { y: -100 } : { y: -300 };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -76,10 +86,7 @@ function Projects() {
             </h4>
 
             <motion.img
-              initial={{ y: -300 }}
-              transition={{ duration: 1.2 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              {...imgAnimation}
               className="w-[250px] md:w-[500px] aspect-[3/2] object-contain"
               src={project.src}
               alt="project"
@@ -107,7 +114,7 @@ function Projects() {
             </div>
 
             <div className="space-y-10 px-0 md:px-10 max-w-6xl mt-5">
-              <p className="text-m md:text-lg text-center">
+              <p className="text-s md:text-lg text-center">
                 {project.description}
               </p>
             </div>
