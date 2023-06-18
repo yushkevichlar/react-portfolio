@@ -62,6 +62,7 @@ export default function Header() {
         <SocialIcon
           target="_blank"
           rel="noopener noreferrer"
+          url="mailto:yushkevichlar@gmail.com"
           className="cursor-pointer"
           network="email"
           fgColor="#3a4cb3"

@@ -29,11 +29,11 @@ function Contact() {
               className="h-7 w-7 animate-pulse text-[#465cd9]"
               target="_blank"
               rel="noopener noreferrer"
-              url="https://t.me/yushkevichlar"
+              url="https://linkedin.com/in/yushkevichlar"
               fgColor="#3a4cb3"
               bgColor="transparent"
             />
-            <p className="md:text-2xl xl:text-2xl">Telegram</p>
+            <p className="text-sm md:text-lg">LinkedIn</p>
           </div>
 
           <div className="flex items-center justify-center space-x-2">
@@ -41,24 +41,25 @@ function Contact() {
               className="h-7 w-7 animate-pulse text-[#465cd9]"
               target="_blank"
               rel="noopener noreferrer"
-              url="https://linkedin.com/in/yushkevichlar"
+              url="https://t.me/yushkevichlar"
               fgColor="#3a4cb3"
               bgColor="transparent"
             />
-            <p className="text-sm md:text-2xl xl:text-2xl">LinkedIn</p>
+            <p className="text-sm md:text-lg">Telegram</p>
           </div>
 
-          <div className="flex items-center justify-center space-x-2">
+          {/* <div className="flex items-center justify-center space-x-2">
             <SocialIcon
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer h-7 w-7 animate-pulse text-[#465cd9]"
+              url="mailto:yushkevichlar@gmail.com"
+              className="h-7 w-7 animate-pulse text-[#465cd9]"
               network="email"
               fgColor="#3a4cb3"
               bgColor="transparent"
             />
-            <p className="md:text-2xl xl:text-2xl">yushkevichlar@gmail.com</p>
-          </div>
+            <p className="text-sm md:text-lg">Email</p>
+          </div> */}
         </div>
 
         <form
